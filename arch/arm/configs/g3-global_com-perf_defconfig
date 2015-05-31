@@ -839,5 +839,5 @@ CONFIG_CPU_VOLTAGE_TABLE=y
 # Memory optimizations
 CONFIG_HAS_MACH_MEMUTILS=y
 
-# TCP congestion
-CONFIG_DEFAULT_WESTWOOD=y
+# Enable more TCP congestion controls
+CONFIG_TCP_CONG_ADVANCED=y
