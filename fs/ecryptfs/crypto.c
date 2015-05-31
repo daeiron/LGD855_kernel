@@ -2672,7 +2672,7 @@ ecryptfs_process_key_cipher(struct crypto_blkcipher **key_tfm,
 {
 	char dummy_key[ECRYPTFS_MAX_KEY_BYTES];
 	char *full_alg_name = NULL;
-	int rc;
+	int rc = 0;
 
 	*key_tfm = NULL;
 	if (*key_size > ECRYPTFS_MAX_KEY_BYTES) {
