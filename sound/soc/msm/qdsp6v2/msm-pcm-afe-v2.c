@@ -58,7 +58,7 @@ static struct snd_pcm_hardware msm_afe_hardware_playback = {
 	.channels_min =         1,
 	.channels_max =         6,
 	.buffer_bytes_max =     MAX_PLAYBACK_PERIOD_SIZE *
-				MIN_PLAYBACK_NUM_PERIODS,
+				MAX_PLAYBACK_NUM_PERIODS,
 	.period_bytes_min =     MIN_PLAYBACK_PERIOD_SIZE,
 	.period_bytes_max =     MAX_PLAYBACK_PERIOD_SIZE,
 	.periods_min =          MIN_PLAYBACK_NUM_PERIODS,
@@ -81,7 +81,7 @@ static struct snd_pcm_hardware msm_afe_hardware_capture = {
 	.channels_min =         1,
 	.channels_max =         6,
 	.buffer_bytes_max =     MAX_CAPTURE_PERIOD_SIZE *
-				MIN_CAPTURE_NUM_PERIODS,
+				MAX_CAPTURE_NUM_PERIODS,
 	.period_bytes_min =     MIN_CAPTURE_PERIOD_SIZE,
 	.period_bytes_max =     MAX_CAPTURE_PERIOD_SIZE,
 	.periods_min =          MIN_CAPTURE_NUM_PERIODS,
